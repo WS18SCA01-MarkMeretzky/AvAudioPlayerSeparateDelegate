@@ -10,19 +10,21 @@
 //  File -> New -> File...
 //  Template: iOS
 //  Source: Cocoa Touch Class
-//  Class: Delegate
+//  Class: AudioPlayerDelegate
 //  Subclass of: NSObject
 //
 
 import UIKit;
 import AVFoundation;   //for AVAudioPlayerDelegate
 
-class Delegate: NSObject, AVAudioPlayerDelegate {
+class AudioPlayerDelegate: NSObject, AVAudioPlayerDelegate {
     let mySwitch: UISwitch;
     
     init(switch mySwitch: UISwitch) {
         self.mySwitch = mySwitch;
     }
+    
+    //MARK: AVAudioPlayerDelegate
     
     //Called when the AVAudioPlayer has finished playing the file.
 

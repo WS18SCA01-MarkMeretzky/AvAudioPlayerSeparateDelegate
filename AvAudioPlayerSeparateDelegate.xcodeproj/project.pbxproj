@@ -12,7 +12,7 @@
 		4D3F79FF21FE62F000810846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3F79FD21FE62F000810846 /* Main.storyboard */; };
 		4D3F7A0121FE62F100810846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D3F7A0021FE62F100810846 /* Assets.xcassets */; };
 		4D3F7A0421FE62F100810846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D3F7A0221FE62F100810846 /* LaunchScreen.storyboard */; };
-		4D3F7A0E21FE7E2200810846 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3F7A0D21FE7E2200810846 /* Delegate.swift */; };
+		4D3F7A0E21FE7E2200810846 /* AudioPlayerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3F7A0D21FE7E2200810846 /* AudioPlayerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		4D3F7A0021FE62F100810846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D3F7A0321FE62F100810846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D3F7A0521FE62F100810846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4D3F7A0D21FE7E2200810846 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		4D3F7A0D21FE7E2200810846 /* AudioPlayerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			children = (
 				4D3F79F921FE62F000810846 /* AppDelegate.swift */,
 				4D3F79FB21FE62F000810846 /* ViewController.swift */,
-				4D3F7A0D21FE7E2200810846 /* Delegate.swift */,
+				4D3F7A0D21FE7E2200810846 /* AudioPlayerDelegate.swift */,
 				4D3F79FD21FE62F000810846 /* Main.storyboard */,
 				4D3F7A0021FE62F100810846 /* Assets.xcassets */,
 				4D3F7A0221FE62F100810846 /* LaunchScreen.storyboard */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D3F7A0E21FE7E2200810846 /* Delegate.swift in Sources */,
+				4D3F7A0E21FE7E2200810846 /* AudioPlayerDelegate.swift in Sources */,
 				4D3F79FC21FE62F000810846 /* ViewController.swift in Sources */,
 				4D3F79FA21FE62F000810846 /* AppDelegate.swift in Sources */,
 			);

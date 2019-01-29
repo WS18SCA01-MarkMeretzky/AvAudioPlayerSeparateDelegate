@@ -18,15 +18,14 @@ class ViewController: UIViewController {
         super.viewDidLoad();
         // Do any additional setup after loading the view, typically from a nib.
         guard let url: URL = Bundle.main.url(forResource: "musette", withExtension: "mp3") else {
-            return;
+            fatalError("couldn't find file musette.mp3");
         }
         print("url = \(url)");
         
         do {
             audioPlayer = try AVAudioPlayer(contentsOf: url);
         } catch {
-            print("could not create AVAudioPlayer: \(error)");
-            return;
+            fatalError("could not create AVAudioPlayer: \(error)");
         }
 
         /*
@@ -37,7 +36,7 @@ class ViewController: UIViewController {
         stays alive.
         */
         
-        audioPlayerDelegate = Delegate(switch: mySwitch);
+        audioPlayerDelegate = AudioPlayerDelegate(switch: mySwitch);
         audioPlayer!.delegate = audioPlayerDelegate;
         audioPlayer!.numberOfLoops = 0;   //No infinite loop.
         print("audioPlayer!.duration = \(audioPlayer!.duration) seconds");
